@@ -44,19 +44,16 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
+  gem 'sqlite3'
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
 
-group :development do
-  gem 'sqlite3'
-end
-
 group :production do
   gem 'pg'
-  gem 'rails_12factor'
+  #gem 'rails_12factor'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
