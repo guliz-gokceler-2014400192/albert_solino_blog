@@ -18,7 +18,7 @@
 <h2>Comments</h2>
 
   <div id="comments">
-    <%= render @post.comments %>
+    <%= render @post.comments.last %>
   </div>
 
   <%= render 'comments/new', post: @post %>
